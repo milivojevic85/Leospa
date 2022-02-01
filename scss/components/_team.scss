@@ -1,0 +1,93 @@
+.team {
+  &__section-heading {
+    margin-bottom: 70px;
+
+    &__sec-title {
+      color: $h-color;
+      font-weight: 800;
+      margin-bottom: 32px;
+    }
+
+    &__desc {
+      color: $p-color;
+      margin-bottom: 0;
+    }
+  }
+
+  &__single-memb {
+    margin-bottom: 30px;
+
+    > img {
+      height: auto;
+      width: 100%;
+    }
+
+    &__memb-info {
+      background-color: $bg-color;
+      box-shadow: 0 5px 20px $box-shadow-color;
+      cursor: pointer;
+      padding: 15px 0 5px;
+
+      h6 {
+        color: $link-color;
+        font-size: 22px;
+        margin-bottom: 0;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      &--memb-socials {
+        padding-bottom: 15px;
+        visibility: hidden;
+
+        li {
+          display: inline-block;
+
+
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+
+          a {
+            background-size: cover;
+            display: block;
+            height: 40px;
+            text-indent: -9999px;
+            transition: .3s;
+            width: 40px;
+
+            &.fb {
+              background-image: url('../../images/social/facebook.png');
+            }
+
+            &.tw {
+              background-image: url('../../images/social/twitter.png');
+            }
+
+            &.yt {
+              background-image: url('../../images/social/youtube.png');
+            }
+
+            &.ig {
+              background-image: url('../../images/social/instagram.png');
+            }
+
+            &:hover {
+              opacity: .8;
+            }
+
+          }
+        }
+      }
+
+      &:hover {
+        ul {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
