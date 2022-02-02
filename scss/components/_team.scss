@@ -52,12 +52,7 @@
           }
 
           a {
-            background-size: cover;
-            display: block;
-            height: 40px;
-            text-indent: -9999px;
-            transition: .3s;
-            width: 40px;
+            @include socnet(cover, block, 40px, -9999px, .3s, 40px);
 
             &.fb {
               background-image: url('../../images/social/facebook.png');
